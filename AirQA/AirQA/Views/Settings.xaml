@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AirQA.Views.Settings"
+             BackgroundColor="#D9E6F0">
+
+    <StackLayout Orientation="Vertical"
+                 Padding="5,5,5,5">
+
+        <Label Text="Settings"
+               HorizontalOptions="Center"
+               FontSize="30"
+               TextColor="Black"
+               >
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                    <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+        <BoxView HeightRequest="1" Color="Black"/>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Notification"
+                   Font="20"
+                   TextColor="Black"
+               >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <Switch HorizontalOptions="EndAndExpand"/>
+         </StackLayout>
+        
+      
+
+        <StackLayout Orientation="Vertical"
+                     Spacing="10"
+                     Padding="0,10,0,10">
+            
+            <Label Text="Support"
+                   TextColor="Black"
+                   Font="20"
+               >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <BoxView HeightRequest="1" Color="Black"/>
+            
+            <Label Text="Email Support"
+                   TextColor="Black"
+                   x:Name="emailsup"
+                   Font="20"
+               >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+        </StackLayout>
+
+       
+        <StackLayout Orientation="Vertical" Spacing="10"
+                     Padding="0,10,0,10">
+            <Label Text="About"
+                   Font="20"
+                   TextColor="Black"
+               >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <BoxView HeightRequest="1" Color="Black"/>
+
+            <Label Text="Version 1.0"
+                   Font="20"
+                   TextColor="Black"
+               >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <Label Text="Disclaimer"
+                   Font="20"
+                   TextColor="Black"
+               >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+        </StackLayout>
+
+
+       
+
+    </StackLayout>
+
+</ContentPage>

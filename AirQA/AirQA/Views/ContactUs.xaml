@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AirQA.Views.ContactUs"
+           
+             Title="Contact"
+             BackgroundColor="#D9E6F0">
+
+    <AbsoluteLayout>
+        <!--BACKGROUND-->
+        <Image Source="mos.jpg" Opacity="0.3"
+                   Aspect="AspectFill" 
+                   AbsoluteLayout.LayoutBounds="0,0,1,1"
+                   AbsoluteLayout.LayoutFlags="All"/>
+
+
+        <TableView HasUnevenRows="True" Margin="5"
+               AbsoluteLayout.LayoutBounds="0,0,1,1"
+                   AbsoluteLayout.LayoutFlags="All">
+            <TableRoot>
+                <TableSection >
+
+                    <!--TITLE-->
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" 
+                                 HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="FillAndExpand"
+                                 Padding="5,5,5,5">
+
+                            <Label Text="Contact Us" 
+                           TextColor="Black"
+                           FontSize="30"
+                           HorizontalOptions="CenterAndExpand"
+                           >
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                        </StackLayout>
+                    </ViewCell>
+
+                    <!--LOCATION-->
+                    <ViewCell Tapped="map_Tapped" >
+                        <StackLayout Margin="5"
+                                 Orientation="Vertical" 
+                                 HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="FillAndExpand"
+                                     Spacing="10"   
+                                     Padding="10,10,10,10">
+
+                            <Frame CornerRadius="20"
+                        OutlineColor="Black"
+                        Margin="5" >
+
+                                <StackLayout >
+                                    <Image Source="location.png" HeightRequest="30"/>
+                                    <Label Text="Department of Environment, Parks and Recreation, Ministry of Development, Tumasek Plaza Building Raja Isteri Pengiran Anak Saleha Road, Bandar Seri Begawan, BA2111, Negara Brunei Darussalam"
+                         HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                            FontSize="15"
+                               >
+                                        <Label.FontFamily>
+                                            <OnPlatform x:TypeArguments="x:String">
+                                                <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                                                <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                                            </OnPlatform>
+                                        </Label.FontFamily>
+                                    </Label>
+
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </ViewCell>
+
+                    <!--PHONE-->
+                    <ViewCell Tapped="phone_Tapped">
+                        <StackLayout Margin="5"
+                                 Orientation="Vertical" 
+                                 HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="FillAndExpand"
+                                     Spacing="10"   
+                                     Padding="10,10,10,10">
+
+                            <Frame CornerRadius="20"
+                        OutlineColor="Black"
+                HorizontalOptions="FillAndExpand" 
+                               Margin="5" >
+
+                                <StackLayout>
+                                    <Image Source="phone.png" HeightRequest="30"/>
+                                    <Label Text="673-2241262" 
+                                HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                            FontSize="20"
+                               >
+                                        <Label.FontFamily>
+                                            <OnPlatform x:TypeArguments="x:String">
+                                                <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                                                <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                                            </OnPlatform>
+                                        </Label.FontFamily>
+                                    </Label>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </ViewCell>
+
+                    <!--EMAIL-->
+                    <ViewCell Tapped="email_Tapped">
+                        <StackLayout Margin="5"
+                                 Orientation="Vertical" 
+                                 HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="FillAndExpand"
+                                     Spacing="10"   
+                                     Padding="10,10,10,10">
+
+                            <Frame CornerRadius="20"
+                        OutlineColor="Black"
+                HorizontalOptions="FillAndExpand"
+                            Margin="5">
+
+                                <StackLayout>
+                                    <Image Source="message.png" HeightRequest="30"/>
+                                    <Label Text="jastre.brunei@env.gov.bn" 
+                                HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                            FontSize="20"
+                               >
+                                        <Label.FontFamily>
+                                            <OnPlatform x:TypeArguments="x:String">
+                                                <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                                                <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                                            </OnPlatform>
+                                        </Label.FontFamily>
+                                    </Label>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </ViewCell>
+
+                    <!--FACEBOOK-->
+                    <ViewCell Tapped="fb_Tapped">
+                        <StackLayout Margin="5"
+                                 Orientation="Vertical" 
+                                 HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="FillAndExpand"
+                                     Spacing="10"   
+                                     Padding="10,10,10,10">
+
+                            <Frame CornerRadius="20"
+                            Margin="5"
+                        OutlineColor="Black"
+                HorizontalOptions="FillAndExpand">
+
+                                <StackLayout Orientation="Vertical" 
+                                 HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="FillAndExpand"
+                                 Padding="10,20,10,20">
+
+                                    <Image Source="fb.png" HeightRequest="30"/>
+                                    <Label Text="JASTRe-Brunei-Darussalam" 
+                                HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                            FontSize="20"
+                                >
+                                        <Label.FontFamily>
+                                            <OnPlatform x:TypeArguments="x:String">
+                                                <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                                                <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                                            </OnPlatform>
+                                        </Label.FontFamily>
+                                    </Label>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </ViewCell>
+
+                    <!--INSTAGRAM-->
+                    <ViewCell Tapped="ig_Tapped">
+                        <StackLayout Margin="5"
+                                 Orientation="Vertical" 
+                                 HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="FillAndExpand"
+                                     Spacing="10"   
+                                     Padding="10,10,10,10">
+                            <Frame CornerRadius="20"
+                        OutlineColor="Black"
+                            Margin="5"
+                HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Vertical" 
+                                 HorizontalOptions="FillAndExpand"
+                                 VerticalOptions="FillAndExpand"
+                                 Padding="10,20,10,20">
+
+                                    <Image Source="ig.png" HeightRequest="30"/>
+                                    <Label Text="@jastre.bn" 
+                                HorizontalOptions="CenterAndExpand"
+                               TextColor="Black"
+                            FontSize="20"
+                                >
+                                        <Label.FontFamily>
+                                            <OnPlatform x:TypeArguments="x:String">
+                                                <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                                                <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                                            </OnPlatform>
+                                        </Label.FontFamily>
+                                    </Label>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </ViewCell>
+
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </AbsoluteLayout>
+    
+</ContentPage>

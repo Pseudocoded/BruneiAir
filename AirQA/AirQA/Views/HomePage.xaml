@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AirQA.Views.HomePage"
+            x:Name="tabPage"
+            Title="Home"
+            >
+
+    <!--BRUNEI MUARA-->
+    <ContentPage x:Name="brunei"
+                 Title="BRUNEI MUARA">
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Icon="share.png" Order="Primary" 
+                         Clicked="Share_Clicked"
+                         />
+        </ContentPage.ToolbarItems>
+
+        <AbsoluteLayout >
+            <!--BACKGROUND-->
+            <Image Source="mos.jpg" Opacity="0.3"
+                   Aspect="AspectFill" 
+                   AbsoluteLayout.LayoutBounds="0,0,1,1"
+                   AbsoluteLayout.LayoutFlags="All"/>
+
+            <!--DISTRICT-->
+            <Label Text="Brunei - Muara" 
+                   TextColor="Black"
+                   FontSize="50" 
+                   HorizontalOptions="CenterAndExpand" 
+                   AbsoluteLayout.LayoutBounds="0.5,0.15,500,50"  
+                   AbsoluteLayout.LayoutFlags="PositionProportional"  
+                           >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--UPDATES-->
+            <Label Text="Updated on xxxxx"
+                         TextColor="Black"
+                                FontSize="20"
+                            VerticalOptions="StartAndExpand" 
+                            HorizontalOptions="CenterAndExpand"
+                            AbsoluteLayout.LayoutBounds="0.5,0.25,200,50"  
+            AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--RIGHT BUTTON-->
+            <Button Image="right.png"
+    AbsoluteLayout.LayoutBounds="1,.5,50,100"  
+            AbsoluteLayout.LayoutFlags="PositionProportional"  
+                          BackgroundColor="Transparent"
+                    Clicked="BnRight_Clicked"/>
+
+            <!--LEVEL-->
+            <Label Text="Good"
+                               TextColor="Black"
+                               FontSize="40"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand" 
+                            AbsoluteLayout.LayoutBounds="0.5,0.65,300,100"  
+            AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--PSI READINGS-->
+            <Label Text="12"
+                   TextColor="Black"
+                   FontSize="80"
+                   FontAttributes="Bold"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                   AbsoluteLayout.LayoutBounds="0.5,0.45,100,100"  
+            AbsoluteLayout.LayoutFlags="PositionProportional"  >
+
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Montserrat-Regular" />
+                        <On Platform="Android" Value="Montserrat-ExtraBold.ttf#Montserrat-ExtraBold" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--alerts warning-->
+
+            <Label Text="Air is satisfactory, poses little to no risk"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                   AbsoluteLayout.LayoutBounds="0.5,0.85,400,200"  
+            AbsoluteLayout.LayoutFlags="PositionProportional"  >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+        </AbsoluteLayout>
+    </ContentPage>
+
+    <!--TUTONG-->
+    <ContentPage x:Name="tutong"
+                 Title="TUTONG">
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Icon="share.png" Order="Primary"
+                             Clicked="Share_Clicked"
+                         />
+        </ContentPage.ToolbarItems>
+
+        <AbsoluteLayout>
+            <!--BACKGROUND-->
+            <Image Source="ctut.jpg" Opacity="0.3"
+                            Aspect="AspectFill"
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"/>
+
+            <!--DISTRICT-->
+            <Label Text="Tutong" 
+                   TextColor="Black"
+                   FontSize="50" 
+                   HorizontalOptions="CenterAndExpand" 
+                   AbsoluteLayout.LayoutBounds="0.5,0.15,500,100"  
+                   AbsoluteLayout.LayoutFlags="PositionProportional"  
+                           >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--UPDATES-->
+            <Label Text="Updated on xxxxx"
+                         TextColor="Black"
+                                FontSize="20"
+                            VerticalOptions="StartAndExpand" 
+                            HorizontalOptions="CenterAndExpand"
+                            AbsoluteLayout.LayoutBounds="0.5,0.25,200,50"  
+            AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--LEFT BUTTON-->
+            <Button Image="left.png"
+                        Clicked="TutLeft_Clicked"
+    AbsoluteLayout.LayoutBounds="0,.5,50,100"  
+            AbsoluteLayout.LayoutFlags="PositionProportional"  
+                           BackgroundColor="Transparent"/>
+
+            <!--RIGHT BUTTON-->
+            <Button Image="right.png"
+                       Clicked="TutRight_Clicked"
+    AbsoluteLayout.LayoutBounds="1,.5,50,100"  
+            AbsoluteLayout.LayoutFlags="PositionProportional"  
+                          BackgroundColor="Transparent"
+                    />
+
+            <!--LEVEL-->
+            <Label Text="Good"
+                               TextColor="Black"
+                               FontSize="40"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand" 
+                            AbsoluteLayout.LayoutBounds="0.5,0.65,300,100"  
+            AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--PSI READINGS-->
+            <Label Text="12"
+                   TextColor="Black"
+                   FontSize="80"
+                   FontAttributes="Bold"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                   AbsoluteLayout.LayoutBounds="0.5,0.45,100,100"  
+            AbsoluteLayout.LayoutFlags="PositionProportional"  >
+
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Montserrat-Regular" />
+                        <On Platform="Android" Value="Montserrat-ExtraBold.ttf#Montserrat-ExtraBold" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--alerts warning-->
+
+            <Label Text="Air is satisfactory, poses little to no risk"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                  
+                   AbsoluteLayout.LayoutBounds="0.5,0.85,400,200"  
+            AbsoluteLayout.LayoutFlags="PositionProportional"  >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+        </AbsoluteLayout>
+    </ContentPage>
+
+    <!--TEMBURONG-->
+    <ContentPage x:Name="temburong"
+                 Title="TEMBURONG">
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Icon="share.png" Order="Primary"
+                         Clicked="Share_Clicked"
+                         />
+        </ContentPage.ToolbarItems>
+
+        <AbsoluteLayout>
+            <!--BACKGROUND-->
+            <Image Source="tem.jpg" Opacity="0.3"
+                            Aspect="AspectFill" 
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"/>
+
+            <!--DISTRICT-->
+            <Label Text="Temburong" 
+                   TextColor="Black"
+                   FontSize="50" 
+                   HorizontalOptions="CenterAndExpand" 
+                   AbsoluteLayout.LayoutBounds="0.5,0.15,500,60"  
+                   AbsoluteLayout.LayoutFlags="PositionProportional"  
+                           >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--UPDATES-->
+            <Label Text="Updated on xxxxx"
+                         TextColor="Black"
+                                FontSize="20"
+                            VerticalOptions="StartAndExpand" 
+                            HorizontalOptions="CenterAndExpand"
+                            AbsoluteLayout.LayoutBounds="0.5,0.25,200,50"  
+            AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--LEFT BUTTON-->
+            <Button Image="left.png"
+                    Clicked="TemLeft_Clicked"
+    AbsoluteLayout.LayoutBounds="0,.5,50,100"  
+            AbsoluteLayout.LayoutFlags="PositionProportional"  
+                           BackgroundColor="Transparent"/>
+
+            <!--RIGHT BUTTON-->
+            <Button Image="right.png"
+                    Clicked="TemRight_Clicked"
+    AbsoluteLayout.LayoutBounds="1,.5,50,100"  
+            AbsoluteLayout.LayoutFlags="PositionProportional"  
+                          BackgroundColor="Transparent"
+                  />
+
+            <!--LEVEL-->
+            <Label Text="Good"
+                               TextColor="Black"
+                               FontSize="40"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand" 
+                            AbsoluteLayout.LayoutBounds="0.5,0.65,300,100"  
+            AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--PSI READINGS-->
+            <Label Text="12"
+                   TextColor="Black"
+                   FontSize="80"
+                   FontAttributes="Bold"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                   AbsoluteLayout.LayoutBounds="0.5,0.45,100,100"  
+            AbsoluteLayout.LayoutFlags="PositionProportional"  >
+
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Montserrat-Regular" />
+                        <On Platform="Android" Value="Montserrat-ExtraBold.ttf#Montserrat-ExtraBold" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--alerts warning-->
+
+            <Label Text="Air is satisfactory, poses little to no risk"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                   AbsoluteLayout.LayoutBounds="0.5,0.85,400,200"  
+            AbsoluteLayout.LayoutFlags="PositionProportional"  >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+        </AbsoluteLayout>
+    </ContentPage>
+
+    <!--BELAIT-->
+    <ContentPage x:Name="belait"
+                 Title="BELAIT">
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Icon="share.png" Order="Primary"
+                         Clicked="Share_Clicked"
+                        />
+        </ContentPage.ToolbarItems>
+
+        <AbsoluteLayout>
+            <!--BACKGROUND-->
+            <Image Source="blt.jpg" Opacity="0.3"
+                            Aspect="AspectFill" 
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"/>
+
+            <!--DISTRICT-->
+            <Label Text="Belait" 
+                   TextColor="Black"
+                   FontSize="50" 
+                   HorizontalOptions="CenterAndExpand" 
+                   AbsoluteLayout.LayoutBounds="0.5,0.15,500,60"  
+                   AbsoluteLayout.LayoutFlags="PositionProportional"  
+                           >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--UPDATES-->
+            <Label Text="Updated on xxxxx"
+                         TextColor="Black"
+                                FontSize="20"
+                            VerticalOptions="StartAndExpand" 
+                            HorizontalOptions="CenterAndExpand"
+                            AbsoluteLayout.LayoutBounds="0.5,0.25,200,50"  
+            AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--LEFT BUTTON-->
+            <Button Image="left.png"
+                    Clicked="BelLeft_Clicked"
+    AbsoluteLayout.LayoutBounds="0,.5,50,100"  
+            AbsoluteLayout.LayoutFlags="PositionProportional"  
+                           BackgroundColor="Transparent"/>
+
+            <!--LEVEL-->
+            <Label Text="Good"
+                               TextColor="Black"
+                               FontSize="40"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand" 
+                            AbsoluteLayout.LayoutBounds="0.5,0.65,300,100"  
+            AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--PSI READINGS-->
+            <Label Text="12"
+                   TextColor="Black"
+                   FontSize="80"
+                   FontAttributes="Bold"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                   AbsoluteLayout.LayoutBounds="0.5,0.45,100,100"  
+            AbsoluteLayout.LayoutFlags="PositionProportional"  >
+
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Montserrat-Regular" />
+                        <On Platform="Android" Value="Montserrat-ExtraBold.ttf#Montserrat-ExtraBold" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <!--alerts warning-->
+
+            <Label Text="Air is satisfactory, poses little to no risk"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" 
+                   AbsoluteLayout.LayoutBounds="0.5,0.85,400,200"  
+            AbsoluteLayout.LayoutFlags="PositionProportional"  >
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Raleway-Regular" />
+                        <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+        </AbsoluteLayout>
+    </ContentPage>
+    
+</TabbedPage>

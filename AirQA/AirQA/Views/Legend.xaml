@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AirQA.Views.Legend"
+             BackgroundColor="#D9E6F0"
+             Title="Legend"
+             >
+
+    <AbsoluteLayout>
+        <Image Source="cldbg.jpg" Opacity="0.3"
+               Aspect="AspectFill" 
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"/>
+
+        <Label Text="PSI Readings"
+               TextColor="Black"
+               FontSize="40"
+               HorizontalOptions="Center"
+               AbsoluteLayout.LayoutBounds="0.5,0.1,300,100"
+               AbsoluteLayout.LayoutFlags="PositionProportional">
+
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                    <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+
+        <Image Source="psi.JPG" 
+               AbsoluteLayout.LayoutBounds="0.5,0.3,300,300"
+            AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Image Source="sun.png"
+                 AbsoluteLayout.LayoutBounds="0.2,0.7,100,100"
+            AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Image Source="windy.png"
+               AbsoluteLayout.LayoutBounds="0.5,0.7,100,100"
+            AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Image Source="windsock.png"
+               AbsoluteLayout.LayoutBounds="0.8,0.7,100,100"
+            AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+    </AbsoluteLayout>
+
+</ContentPage>

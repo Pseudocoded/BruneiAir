@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 x:Class="AirQA.Views.MenuMasterPage"
+                      >
+
+    <MasterDetailPage.Master>
+        <ContentPage
+            Title="Menu"
+            BackgroundColor="#D9E6F0"
+           >
+
+            <StackLayout Orientation="Vertical"
+                         Padding="5,0,5,0">
+
+                <StackLayout BackgroundColor="#D9E6F0" 
+                             Orientation="Horizontal"
+                             Padding="0,10,5,5">
+
+                    <Image Source="panji.png"
+                           HeightRequest="100"
+                           WidthRequest="150"
+                           Aspect="AspectFit"
+                           VerticalOptions="Center"/>
+
+                    <Label Text="Department of Environment, Parks and Recreations"
+                           TextColor="Black"
+                           FontSize="20"
+                           VerticalOptions="Center"
+                           >
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                                <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                </StackLayout>
+
+                <BoxView Color="Black" HeightRequest="1"/>
+
+                <ListView BackgroundColor="#D9E6F0"
+                         HorizontalOptions="CenterAndExpand"
+                          x:Name="ListMenu" 
+                          ItemSelected="ListMenu_ItemSelected" 
+                          SeparatorColor="Black"
+                          HasUnevenRows="True">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate >
+                            <ViewCell Height="50">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding ImageUrl}"/>
+                                    <Label Text="{Binding MenuTitle}"
+                                           TextColor="Black"
+                                           VerticalOptions="Center"
+                                           FontSize="20">
+                                        <Label.FontFamily>
+                                            <OnPlatform x:TypeArguments="x:String">
+                                                <On Platform="iOS" Value="Raleway-Regular-Thin" />
+                                                <On Platform="Android" Value="Raleway-Regular.ttf#Raleway-Regular" />
+                                            </OnPlatform>
+                                        </Label.FontFamily>
+                                    </Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                    
+                </ListView>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage> 
