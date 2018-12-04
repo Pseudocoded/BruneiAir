@@ -11,7 +11,9 @@
     <item name="windowActionBar">false</item>
     <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette -->
     <!-- colorPrimary is used for the default action bar background -->
-    <item name="colorPrimary">#2196F3</item>
+    <!--<item name="colorPrimary">#2196F3</item>-->
+    <item name="colorPrimary">#3299CC</item>
+    
     <!-- colorPrimaryDark is used for the status bar -->
     <item name="colorPrimaryDark">#1976D2</item>
     <!-- colorAccent is used as the default value for colorControlActivated
@@ -27,4 +29,14 @@
   <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
     <item name="colorAccent">#FF4081</item>
   </style>
+
+  <style name="Theme.Splash" parent="android:Theme">
+    <item name="android:windowBackground">@drawable/sky</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <!--<style name="NavigationPage" TargetType="NavigationPage">
+    <setter Property="BarBackgroundColor" Value="Blue"/>
+    <setter Property="BarTextColor" Value="White"/>
+  </style>-->
 </resources>

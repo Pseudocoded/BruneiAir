@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AirQA.Views.Insert"
+             Title="Insert">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="10,5,10,5">
+
+            <Label/>
+
+            <Label Text="Brunei Muara Readings"
+                    TextColor="Black"
+                 HorizontalOptions="Center"
+                   FontSize="20"/>
+            <Entry x:Name="valueEntry" Placeholder="Value" HorizontalTextAlignment="Center" Keyboard="Numeric" />
+
+            <Label />
+
+            <Label Text="Tutong Readings"
+                    TextColor="Black"
+                      HorizontalOptions="Center"
+                   FontSize="20"/>
+            <Entry x:Name="valueEntry2" Placeholder="Value" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+
+            <Label />
+
+            <Label Text="Temburong Readings"
+                    TextColor="Black"
+                      HorizontalOptions="Center"
+                   FontSize="20"/>
+            <Entry x:Name="valueEntry3" Placeholder="Value" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+
+            <Label />
+
+            <Label Text="Belait Readings"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="20"/>
+            <Entry x:Name="valueEntry4" Placeholder="Value" HorizontalTextAlignment="Center" Keyboard="Numeric" />
+
+            <Label />
+
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand">
+
+                <!--<Button Text="View" Clicked="Button_Clicked2" TextColor="Black" BorderWidth="1" BorderColor="Black" BackgroundColor="White" BorderRadius="10" WidthRequest="120"/>-->
+                <Button Text="Save" Clicked="Button_Clicked" TextColor="White" BackgroundColor="#1a75ff" BorderRadius="10" WidthRequest="120"/>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

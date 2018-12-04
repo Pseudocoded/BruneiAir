@@ -18,12 +18,13 @@ namespace AirQA.Views
 		public MenuMasterPage ()
 		{
 			InitializeComponent();
+
 			MyMenu();
 		}
 
 		public void MyMenu()
 		{
-			
+
 			Detail = new NavigationPage(new HomePage());
 
 			List<Menu> menu = new List<Menu>
@@ -31,25 +32,26 @@ namespace AirQA.Views
 				new Menu{ Page= new HomePage(),MenuTitle="Home", ImageUrl="home.png"},
 				new Menu{ Page= new Legend(),MenuTitle="Legend", ImageUrl="legend.png"},
 				new Menu{ Page= new Link(),MenuTitle="Links", ImageUrl="link.png"},
-				new Menu{ Page= new Settings(),MenuTitle="Setting", ImageUrl="setting.png"},
+				new Menu{ Page= new Settings(),MenuTitle="Settings", ImageUrl="setting.png"},
 				new Menu{ Page= new ContactUs(),MenuTitle="Contact Us", ImageUrl="ctcus.png"},
-				
+				new Menu{ Page= new LoginPage(),MenuTitle="Admin Login", ImageUrl="login.png"},
+
 			};
 
 			ListMenu.ItemsSource = menu;
 		}
 
-		private void ListMenu_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-		{
-			var menu = e.SelectedItem as Menu;
-			if (menu != null)
-			{
-				IsPresented = false;
-				Detail = new NavigationPage(menu.Page);
-			}
-			((ListView)sender).SelectedItem = null;
-		}
+        private void ListMenu_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var menu = e.SelectedItem as Menu;
+            if (menu != null)
+            {
+                IsPresented = false;
+                Detail = new NavigationPage(menu.Page);
 
+                ((ListView)sender).SelectedItem = null;
+            }
 
+        }
 	}
 }

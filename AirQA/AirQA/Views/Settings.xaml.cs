@@ -23,6 +23,13 @@ namespace AirQA.Views
 					Device.OpenUri(new Uri("mailto:airqualityappbn@gmail.com"));
 				})
 			});
+
+			disclaimer.GestureRecognizers.Add(new TapGestureRecognizer
+			{
+				Command = new Command(() => {
+					DisplayAlert("Disclaimer","This application is developed by 6 participant of FPT - UBD Innovation Lab","Close");
+				})
+			});
 		}
 
 	}

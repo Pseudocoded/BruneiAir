@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AirQA.Views.LoginPage"
+             Title="Login"
+             BackgroundColor="#D9E6F0">
+    
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical"
+                     Padding="10,5,10,5">
+
+            <Image Source="panji.png"/>
+
+            <Label/>
+
+            <StackLayout VerticalOptions="StartAndExpand">
+            <Label Text="Username" 
+                   TextColor="Black"
+                   FontSize="20"
+                   HorizontalOptions="Center"/>
+                
+            <Entry x:Name="usernameEntry" Placeholder="Username" HorizontalTextAlignment="Center"/>
+
+                <Label/>
+
+                <Label Text="Password"
+                   TextColor="Black"
+                   FontSize="20"
+                   HorizontalOptions="Center"/>
+
+                <Entry x:Name="passwordEntry" IsPassword="true" Placeholder="Password" HorizontalTextAlignment="Center"/>
+                
+            <Button Text="Login" 
+                    BackgroundColor="#1a75ff"
+                    HorizontalOptions="Center"
+                    TextColor="White"
+                    BorderRadius="10"
+                    WidthRequest="150"
+                    Clicked="OnLoginButtonClicked"
+                    />
+            <Label x:Name="messageLabel" 
+                   TextColor="Black"
+                   FontSize="15"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

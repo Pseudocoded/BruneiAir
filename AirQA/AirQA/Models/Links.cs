@@ -10,7 +10,7 @@ namespace AirQA.Models
     {
         public string UrlPage { get; set; }
         public string Title { get; set; }
-        
+
         public Action<View, object> CallBack { get; set; }
 
         public Links(string urlPage, string title)

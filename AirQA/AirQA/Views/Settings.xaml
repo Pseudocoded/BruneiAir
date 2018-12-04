@@ -2,15 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AirQA.Views.Settings"
-             BackgroundColor="#D9E6F0">
+             BackgroundColor="#D9E6F0"
+             Title="Settings">
 
     <StackLayout Orientation="Vertical"
                  Padding="5,5,5,5">
 
-        <Label Text="Settings"
-               HorizontalOptions="Center"
-               FontSize="30"
-               TextColor="Black"
+        <Label  Text="Settings"
+                   TextColor="Black"
+                   Font="20"
                >
             <Label.FontFamily>
                 <OnPlatform x:TypeArguments="x:String">
@@ -102,6 +102,7 @@
 
             <Label Text="Disclaimer"
                    Font="20"
+                   x:Name="disclaimer"
                    TextColor="Black"
                >
                 <Label.FontFamily>
